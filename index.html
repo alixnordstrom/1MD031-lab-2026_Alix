@@ -1,1 +1,102 @@
-Hello world
+<!DOCTYPE HTML> <!-- Home page is index -->
+<html lang="en">
+   <head>
+       <title>LIXBURGERS</title>
+       <meta charset="utf-8"/>
+   </head>
+   <body>
+        <header>
+            <h1>Välkommen till LIXBURGERS</h1>
+            <h6>Uppsalas bästa burgare 10onde året i rad!</h6>
+        </header>
+   <main>
+        <section>
+        <h2>Vilken burgare är du sugen på idag?</h2>
+
+        <div style="display: inline-block; width: 250px; vertical-align: top;" >
+            <h3>Donutburgaren</h3>
+            <img src="img/Burgare_1.jpeg" alt="Donut burgaren" style="width: 250px; height: 250px; object-fit: cover;">
+            <h4>Allergener</h4>
+            <ul>
+                <li>Innehåller gluten</li>
+                <li>Innehåller laktos</li>
+            </ul>
+        </div>
+
+        <div style="display: inline-block; width: 250px; vertical-align: top;" >
+            <h3>Sockervadds burgaren</h3>
+            <img src="img/Burgare_2.webp" alt="Sockervadds burgaren" style="width: 250px; height: 250px; object-fit: cover;">
+            <h4>Allergener</h4>
+            <ul>
+                <li>Innehåller gluten</li>
+                <li>Innehåller laktos</li>
+                <li>Innehåller sockervadd</li>
+            </ul>
+        </div>
+
+        <div style="display: inline-block; width: 250px; vertical-align: top;" >
+            <h3>Tropiska burgaren</h3>
+            <img src="img/Burgare_3.jpg" alt="Tropiska burgaren" style="width: 250px; height: 250px; object-fit: cover;"> <!-- bilderna fyller hela ytan utan att bli utdragna -->
+            <h4>Allergener</h4>
+            <ul>
+                <li>Innehåller gluten</li>
+                <li>Innehåller laktos</li>
+                <li>Innehåller hallon, mynta och ananas</li>
+            </ul>
+        </div>
+        </section>
+
+        <section id="Kontakt">
+            <h3>Fyll i leveransdetaljer</h3>
+    <form>
+    <p>
+        <label for="fullname">Ditt fulla namn</label><br>
+        <input type="text" id="fullname" name="fn" required="required" placeholder="För- och efternamn">
+    </p>
+    <p>
+        <label for="email">Email</label><br>
+        <input type="text" id="email" name="em" placeholder="Email adress">
+    </p>
+    <p>
+        <label for="street">Gata</label><br>
+        <input type="street" id="street" name="st" required="required" placeholder="Gatu-adress">
+    </p>
+    <p>
+        <label for="house">Hus</label><br>
+        <input type="house" id="house" name="hs" required="required" placeholder="Husnummer">
+    </p>
+    <p>
+   <label for="payment">Betalningsmetoder</label><be> </p>
+   <select id="payment" name="pm">
+       <option>Apple Pay</option>
+       <option>Kort</option>
+       <option>Klarna</option>
+       <option selected>Swish</option>
+   </select>
+    <p>Vilket kön tillhör du?</p>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Kvinna</label><br>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Man</label><br>
+
+        <input type="radio" id="other" name="gender" value="none" checked>
+        <label for="other">Vill inte ange</label>
+    </form>
+    <p>
+    <button type="submit">
+        <img src="img/pink_check.webp" width="25" alt="Check">
+        Beställ burgare!
+    </button>
+    </p>
+
+        </section>
+        <p><a>A link</a></p>
+        <a><p>A paragraph as link</p></a>
+    </main>
+    <hr> <!-- To separate the footer from the rest of the website -->
+    <footer>
+        &copy; 2026 LIXBURGERS
+    </footer>
+    </body>
+</html>
